@@ -1,8 +1,5 @@
 # sports-ecommerce
 
-Section 4\41 Getting a single product with specification
-from 33 to 40 we introduce, cover and generate:
--Add another constructor in "ProductsWithTypesAndBrandsSpecification" class to
-include id spec search for brand and type product
--Adding another entity to "ProductsController" in HttpGet id
--Adding change to .gitignore
+Section 4\42 Using the debugger to view the spec pattern in action
+-Add "processId": "${command:pickProcess}" to launch.json for
+allowing the debugger to take action
