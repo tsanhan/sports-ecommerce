@@ -1,10 +1,9 @@
 # sports-ecommerce
-Section 3 summary
--Adding repository and interface
--Adding repository methods
--Extending products entity
--Creating new migrations and configure it
--Applying the migrations and creating database at app startup
--Adding seed data
--Adding the code  to get the product brands and product types
--Eager loading of navigation prop.
+Section 4\40 API Generic Repository
+from 33 to 40 we introduce, cover and generate:
+-generic repository and interface
+-implement the methods in the generic repository
+-introduce to specification, create specification and create the spec. evaluetore
+-implement the repo.  with spec. methods
+-using the spec. methods in the controller
+
