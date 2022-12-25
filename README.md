@@ -1,5 +1,5 @@
 # sports-ecommerce
 
-Section 4\42 Using the debugger to view the spec pattern in action
--Add "processId": "${command:pickProcess}" to launch.json for
-allowing the debugger to take action
+Section 4\43 Shaping the data to return with DTOs
+-Add "ProductToReturnDto" class to hold a list of get&set property
+-Transfering the data to "ProductController" class
