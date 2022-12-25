@@ -1,5 +1,7 @@
 # sports-ecommerce
 
-Section 4\43 Shaping the data to return with DTOs
--Add "ProductToReturnDto" class to hold a list of get&set property
--Transfering the data to "ProductController" class
+Section 4\44 Adding automapper to the API project
+-Downloading the AutoMapper.Extenssion
+-Creatin "MappingProfiles" class with constructor
+-Adding service.AddAutoMapper to startup.cs
+-Inside "ProductController" HttpGet:ID return Map to transfer data from "Product" to "ProductToReturnDto"
