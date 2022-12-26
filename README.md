@@ -1,6 +1,14 @@
 # sports-ecommerce
 
-Section 4\46 Adding a custome value resolver for automapper
--Add ApiUrl with https://localhost:5001/ destination to appsetting.development.json
--Adding "ProductUrlResolver" class a formmember to hold source and destination with parameter
--Adding another formember to "MappingProfiles" to hold the method point to source and move to destination
+Section 4\47 summary + Serving static content from the API
+-Add to startup.cs the ability to transfer and show static files by
+create built-in methods app.UseStaticFiles()
+summary in this module:
+
+1. Creating a generic repository
+2. Specification Pattern
+3. Using the Specification Pattern
+4. Using the debugger
+5. Shaping data
+6. AutoMapper
+7. Serving static content from the API
