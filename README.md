@@ -1,7 +1,6 @@
 # sports-ecommerce
 
-Section 4\45 Configure automapper profiles
--Downloading the AutoMapper.Extenssion
--Adding to "MappingProfiles" class a formmember to hold property such as ProductType\Brand as string
--Inside "ProductController" HttpGet return Map to transfer data from "Product" to "ProductToReturnDto"
-holding products as parameter
+Section 4\46 Adding a custome value resolver for automapper
+-Add ApiUrl with https://localhost:5001/ destination to appsetting.development.json
+-Adding "ProductUrlResolver" class a formmember to hold source and destination with parameter
+-Adding another formember to "MappingProfiles" to hold the method point to source and move to destination
