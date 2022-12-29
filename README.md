@@ -1,14 +1,11 @@
 # sports-ecommerce
 
-Section 4\47 summary + Serving static content from the API
--Add to startup.cs the ability to transfer and show static files by
-create built-in methods app.UseStaticFiles()
-summary in this module:
+Section 5\49 Introduction
 
-1. Creating a generic repository
-2. Specification Pattern
-3. Using the Specification Pattern
-4. Using the debugger
-5. Shaping data
-6. AutoMapper
-7. Serving static content from the API
+1. Error hendling and exception
+2. Developer exception page
+3. Validation errors
+4. Http response errors
+5. Costumizing the error handling
+6. Middleware
+7. Swagger
