@@ -1,7 +1,6 @@
 # sports-ecommerce
 
-Section 5\50 Creatin a test controller for errors
+Section 5\51 Creatin a consistent error response from the api
+- Adding ApiResponse to hold each error containing the correct
+rout number and text exception relaited to it
 
-- Adding BAseApiController to holding the routing
-- Adding BuggyController to take from BaseApiController the routing 
-and navigate each error
