@@ -1,6 +1,8 @@
 # sports-ecommerce
 
-Section 5\52 Adding a not found and point error handler
-- Adding ErrorController to take role on a 
-specific error code
+Section 5\53 Creating exception handling middleware
+- Adding ApiException to give more specific value  and information
+about error
+- Adding ExcpetionMiddleware using try and catch to hook up out 
+the error
 
