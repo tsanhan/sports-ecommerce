@@ -1,11 +1,7 @@
 # sports-ecommerce
 
-Section 5\49 Introduction
+Section 5\50 Creatin a test controller for errors
 
-1. Error hendling and exception
-2. Developer exception page
-3. Validation errors
-4. Http response errors
-5. Costumizing the error handling
-6. Middleware
-7. Swagger
+- Adding BAseApiController to holding the routing
+- Adding BuggyController to take from BaseApiController the routing 
+and navigate each error
