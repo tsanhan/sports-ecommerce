@@ -1,7 +1,7 @@
 # sports-ecommerce
 
-Section 5\56 Improving the the swagger documentation
-- Adding ProducesResponseType with StatusCodes to ProductController
-to improve and easy to read our documentation alonge error occuring
+Section 5\57 Cleaning up the startup class
+- Creating to mejor class "SwaggerServiceExtensions" and "ApplicationServicesExtensions"
+to hold the swagger documentation and the errors types value
 
 
