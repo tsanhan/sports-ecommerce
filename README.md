@@ -1,15 +1,9 @@
 # sports-ecommerce
 
-Section 6\59 Introduction
-In this module:
--Sorting
--Filtering
--Searching
--Paging
--CORS*
-Goal:
-To be able to implement sorting, searching and pagination
-functionality in a list using the specification pattern.
+Section 6\61 Adding a sort specification class part 2
+-Adding orderBy and orderByDescending to add
+the ability for sorting by name\price
+
 
 
 
