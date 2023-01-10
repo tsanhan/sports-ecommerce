@@ -8,28 +8,35 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data
 {
-    public class SpecificationEvaluetore<TEntity> where TEntity: BaseEntity
+    public class SpecificationEvaluetore<TEntity> where TEntity : BaseEntity
     {
-        public static IQueryable<TEntity>GetQuery(IQueryable<TEntity>inputQuery,
-         ISpecification<TEntity> spec)
-         {
+        public static IQueryable<TEntity> GetQuery(
+            IQueryable<TEntity> inputQuery,
+            ISpecification<TEntity> spec
+        )
+        {
             var query = inputQuery;
-            if(spec.Criteria !=null)
+            if (spec.Criteria != null)
             {
-                query = query.Where(spec.Criteria);// Works like: p => p.ProductTypeId == id
+                query = query.Where(spec.Criteria); // Works like: p => p.ProductTypeId == id
             }
 
-            if(spec.OrderBy !=null)
+            if (spec.OrderBy != null)
             {
                 query = query.OrderBy(spec.OrderBy);
             }
 
-             if(spec.OrderByDescending !=null)
+            if (spec.OrderByDescending != null)
             {
                 query = query.OrderByDescending(spec.OrderByDescending);
             }
+
+            if (spec.IsPagingEnabled)
+            {
+                query = query.Skip(spec.Skip).Take(spec.Take);
+            }
             query = spec.Includes.Aggregate(query, (current, include) => current.Include(include));
             return query;
-         }
+        }
     }
 }
