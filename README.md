@@ -1,9 +1,9 @@
 # sports-ecommerce
 
-Section 6\64 Adding Pagination part 1
--Adding three  more property to ISpecification class 
-1. int Skip
-2. int Take
-3. bool IsPagingEnabled
-this give the system the ability to ask which order into ApplyPaging methode
+Section 6\65 Adding Pagination part 2
+-Adding three  more property to ProductSpecParams class 
+1. int BrandId
+2. int TypeId
+3. string Sort
+this give the system the ability to search into specific pages
 
