@@ -12,8 +12,8 @@ namespace Core.Specifications
         public ProductsWithTypesAndBrandsSpecification(ProductSpecParams productParams)
             : base(
                 x =>
-                    (!productParams.BrandId.HasValue || x.ProductBrandId == productParams.BrandId)
-                    && (!productParams.TypeId.HasValue || x.ProductTypeId == productParams.TypeId)
+                    (!productParams.BrandId.HasValue || x.ProductBrandId == productParams.BrandId) && 
+                    (!productParams.TypeId.HasValue || x.ProductTypeId == productParams.TypeId)
             )
         {
             AddInclude(x => x.ProductBrand);
