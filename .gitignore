@@ -1,8 +1,4 @@
-.alpackages
-.vscode
-**.txt
-**.db
-**.cs
+
 # Logs
 logs
 *.log
@@ -570,3 +566,6 @@ $RECYCLE.BIN/
 
 **/*.props
 
+Infrastructure/Data/Migrations/20221208202939_InitialCreate.Designer.cs
+API/ReadMe.txt
+API/sport-ecommerce.db-wal
