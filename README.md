@@ -1,6 +1,7 @@
 # sports-ecommerce
 
-Section 6\62 Working around the decimal problem in sqlite
--Adding to "StoreContext" class a statment for ProviderName
-to recognize MicrosoftEn.....Core.Sqlite and read any decimal
-value that related to products.
+Section 6\63 Adding filtering functionality
+-Adding two  more property to GetProduct method
+1. int brandId
+2. int typeId
+to give more accurate filtering for search after product
