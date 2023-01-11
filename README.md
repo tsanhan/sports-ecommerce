@@ -1,5 +1,6 @@
 # sports-ecommerce
 
-Section 6\66 Adding Pagination part 3
+Section 6\67 Adding the search functionality
+-Give the ability to handle Upper case text when search
 
 
