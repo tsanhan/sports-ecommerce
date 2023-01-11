@@ -1,6 +1,7 @@
 # sports-ecommerce
 
-Section 6\67 Adding the search functionality
--Give the ability to handle Upper case text when search
+Section 6\68 Adding CORS support to the API
+-Create another service in startup class for CORS
+-And of saction 6
 
 
