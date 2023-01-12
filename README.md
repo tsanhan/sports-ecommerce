@@ -1,4 +1,5 @@
 # sports-ecommerce
 
-Section 6\72\73 Reviewing the Angulr project files in the template
--Changing the title name to app name "SporteCommerce"
+Section 6\74 Setting up Angular to use HTTPS
+-By installing certification to "Trusted Root Certification Authorities"
+we let chrome page to load page under Certification
