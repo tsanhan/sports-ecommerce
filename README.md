@@ -1,5 +1,4 @@
 # sports-ecommerce
 
-Section 6\71 Creating the Angular project
--Create client project to hold the visual side
-for this ecommerce client side
+Section 6\72\73 Reviewing the Angulr project files in the template
+-Changing the title name to app name "SporteCommerce"
