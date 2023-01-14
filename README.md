@@ -1,6 +1,8 @@
 # sports-ecommerce
 
-Section 6\79 Adding the Nav Bar HTML code 
-- Adding the html navbar code example from bootstrap example page
+Section 6\80 Styling the navbar
+- Adding more style for nav-bar component 
+- adding value to nav-bar css to give some style the 
+shopping cart
 
 
