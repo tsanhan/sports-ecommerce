@@ -1,4 +1,4 @@
 # sports-ecommerce
 
-Section 6\75 Adding Bootstrap and font-awesome
--Installing bootstrap and font-awesome 
+Section 6\75 Adding CS Code extension for Angular
+
