@@ -1,6 +1,6 @@
 # sports-ecommerce
 
-Section 6\78 Adding a Nav Bar component
-- Adding a new component to hold and operate the navbar
+Section 6\79 Adding the Nav Bar HTML code 
+- Adding the html navbar code example from bootstrap example page
 
 
