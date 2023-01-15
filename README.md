@@ -1,8 +1,10 @@
 # sports-ecommerce
 
-Section 8\83\84\85 Intro to Typescript & Typescript Demo, Creating a products interface
-- Adding two new typescript files product.ts to hold the product type and
-  pagination.ts to hold the page property. 
+Section 8\6 Summary of section 8
+Goal:
+To be able to use the http client to retrive data from
+the API.
+To understand the basics of Observables and Typescript
 
 
 
