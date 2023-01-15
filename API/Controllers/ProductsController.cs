@@ -40,10 +40,8 @@ namespace API.Controllers
             var totalItems = await _productsRepo.CountAsync(countSpec);
 
             var products = await _productsRepo.ListAsync(spec);
-            
 
-             var data = _mapper.Map<IReadOnlyList<ProductToReturnDto>>(products);
-            
+            var data = _mapper.Map<IReadOnlyList<ProductToReturnDto>>(products);
 
             return Ok(
                 new Pagination<ProductToReturnDto>(
@@ -66,7 +64,7 @@ namespace API.Controllers
             if (product == null)
                 return NotFound(new ApiResponse(404));
 
-            return _mapper.Map<Product, ProductToReturnDto>(product);
+            return _mapper.Map<ProductToReturnDto>(product);
         }
 
         [HttpGet("brands")]

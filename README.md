@@ -1,7 +1,8 @@
 # sports-ecommerce
 
-Section 6\82 Observables
-- A sequence of items that arrive asynchronously over time
+Section 8\83\84\85 Intro to Typescript & Typescript Demo, Creating a products interface
+- Adding two new typescript files product.ts to hold the product type and
+  pagination.ts to hold the page property. 
 
 
 
