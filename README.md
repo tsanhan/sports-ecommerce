@@ -1,10 +1,14 @@
 # sports-ecommerce
 
-Section 8\6 Summary of section 8
-Goal:
-To be able to use the http client to retrive data from
-the API.
-To understand the basics of Observables and Typescript
+Section 9\87 Introduction
+
+- File and folder structure
+- Angular services
+- Building the UI for our shop
+- Pagination
+- Filtering, Sorting & Search
+- Input and Output properties
+- Shared components
 
 
 
