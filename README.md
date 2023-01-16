@@ -1,7 +1,8 @@
 # sports-ecommerce
 
-Section 9\92 Adding a child component for the product items
--Adding product-item component to be a child of shop component
+Section 9\93 Passing down data to child component
+-Adding data like price, shopping cart and edit\view to
+product component
 
 
 
