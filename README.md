@@ -1,9 +1,8 @@
 # sports-ecommerce
 
-Section 9\89 Intro to Angular service
-- Inject the GetProducts method to shopService
-and let the export class to hold:
-baseUrl = 'https://localhost:5001/api/'
+Section 9\90 Consuming service in the component
+- Write into the shop-component.html the *ngFor to 
+loop over the products depanding on their names
 
 
 
