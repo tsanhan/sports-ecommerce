@@ -1,9 +1,7 @@
 # sports-ecommerce
 
-Section 9\91 Design the shop page
--Adding the html template from bootstrap to give the shop page
-a basic design with the ability of showing the products card,
-search button, filter selector and etc..etc
+Section 9\92 Adding a child component for the product items
+-Adding product-item component to be a child of shop component
 
 
 
