@@ -1,14 +1,9 @@
 # sports-ecommerce
 
-Section 9\87 Introduction
+Section 9\88 Organising our files and folders
+- Creating three major components core, shared and shop
+- File and folder restructure
 
-- File and folder structure
-- Angular services
-- Building the UI for our shop
-- Pagination
-- Filtering, Sorting & Search
-- Input and Output properties
-- Shared components
 
 
 
