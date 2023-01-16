@@ -1,8 +1,10 @@
 # sports-ecommerce
 
-Section 9\88 Organising our files and folders
-- Creating three major components core, shared and shop
-- File and folder restructure
+Section 9\89 Intro to Angular service
+- Inject the GetProducts method to shopService
+and let the export class to hold:
+baseUrl = 'https://localhost:5001/api/'
+
 
 
 
