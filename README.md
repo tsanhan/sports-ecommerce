@@ -1,8 +1,8 @@
 # sports-ecommerce
 
-Section 9\93 Passing down data to child component
--Adding data like price, shopping cart and edit\view to
-product component
+Section 9\94 Adding the product filter
+-Adding the methods filter getBrands and getTypes to shop
+component to hold it as a two seperate section
 
 
 
