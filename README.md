@@ -1,9 +1,9 @@
 # sports-ecommerce
 
-Section 9\95 Adding the filter functionalety
--Adding to shopService the method getProducts to hold
-the ability for searching product by brand id and type id
-for the menu bar
+Section 9\96 Hooking up the filter to the html
+-Adding propperty's inside shopService getProducts method to hold
+when brand and type is selected.
+So now when typing the buttons the products change
 
 
 

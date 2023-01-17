@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { IBrand } from '../shared/models/brands';
 import { IPagination } from '../shared/models/pagination';
 import { IType } from '../shared/models/productType';
-import { delay, map } from 'rxjs/operators';
+import {  map } from 'rxjs/operators';
 
 
 @Injectable({
@@ -27,11 +27,10 @@ export class ShopService {
 
     return this.http.get<IPagination>(this.baseUrl + 'products', {observe:'response', params})
     .pipe(
-      delay(1000),
       map(response => {
         return response.body;
       })
-    )
+    );
   }
   getBrands() {
     return this.http.get<IBrand[]>(this.baseUrl + 'products/brands')

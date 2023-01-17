@@ -19,13 +19,13 @@ export class ShopComponent implements OnInit {
   constructor(private shopService: ShopService) { }
 
   ngOnInit() {
-    this.getProduct();
+    this.getProducts();
     this.getBrands();
     this.getTypes();
   }
 
-  getProduct() {
-    this.shopService.getProducts().subscribe(response => {
+  getProducts() {
+    this.shopService.getProducts(this.brandIdSelected, this.typeIdSelected).subscribe(response => {
       this.products = response.data;
     }, error => {
       console.log(error);
@@ -49,7 +49,12 @@ export class ShopComponent implements OnInit {
 
   onBrandSelected(brandId:number){
     this.brandIdSelected = brandId;
-    this.getProduct();
+    this.getProducts();
+  }
+
+  onTypeSelected(typeId:number){
+    this.typeIdSelected = typeId;
+    this.getProducts();
   }
 
 }
