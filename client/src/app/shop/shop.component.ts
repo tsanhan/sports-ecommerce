@@ -13,6 +13,8 @@ export class ShopComponent implements OnInit {
   products: IProduct[];
   brands: IBrand[];
   types: IType[];
+  brandIdSelected: number;
+  typeIdSelected:number;
 
   constructor(private shopService: ShopService) { }
 
@@ -32,17 +34,22 @@ export class ShopComponent implements OnInit {
 
   getBrands() {
     this.shopService.getBrands().subscribe(response => {
-      this.brands = response;
+      this.brands = [{id: 0, name: 'All'}, ...response];
     }, error => {
       console.log(error);
     });
   }
   getTypes() {
     this.shopService.getTypes().subscribe(response => {
-      this.types = response;
+      this.types = [{id: 0, name: 'All'}, ...response];
     }, error => {
       console.log(error);
     });
+  }
+
+  onBrandSelected(brandId:number){
+    this.brandIdSelected = brandId;
+    this.getProduct();
   }
 
 }

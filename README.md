@@ -1,8 +1,9 @@
 # sports-ecommerce
 
-Section 9\94 Adding the product filter
--Adding the methods filter getBrands and getTypes to shop
-component to hold it as a two seperate section
+Section 9\95 Adding the filter functionalety
+-Adding to shopService the method getProducts to hold
+the ability for searching product by brand id and type id
+for the menu bar
 
 
 
