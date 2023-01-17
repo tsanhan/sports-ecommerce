@@ -1,9 +1,7 @@
 # sports-ecommerce
 
-Section 9\96 Hooking up the filter to the html
--Adding propperty's inside shopService getProducts method to hold
-when brand and type is selected.
-So now when typing the buttons the products change
+Section 9\97 Adding the sort functionality
+-Adding to html a loop to iterate over sort selected (price: high to low, low to high)
 
 
 
