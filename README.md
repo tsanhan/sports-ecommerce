@@ -1,10 +1,14 @@
 # sports-ecommerce
 
-Section 9\105 Resolving the Bug!
--Adding resolving two API issue with 2 query
-by adding if stasment to shop.component inside
-the onPageChanged method said "this.shopParams.pageNumber !== event"
-to Not Allow two request at both time
+Section 9\106 Summary of suction 9
+
+- File and folder structure
+- Angular service
+- Building the UI for the Shop
+- Pagination
+- Filtering, Sorting& Searching
+- Input and Output  property
+- Shared components
 
 
 
