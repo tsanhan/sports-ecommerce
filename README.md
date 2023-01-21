@@ -1,7 +1,8 @@
 # sports-ecommerce
 
-Section 9\102 Making the pagination component a shared component
--Adding a header component to hold the header page information
+Section 9\103 Pagination and Output properties
+-Adding a pager component to give the functionality
+when changing page
 
 
 
