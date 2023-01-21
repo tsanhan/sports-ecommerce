@@ -1,8 +1,7 @@
 # sports-ecommerce
 
-Section 9\101 Adding the pagination header
--Adding the ability for the page to count how many product each page and 
-if no product it's pops up message "There are 0 results for this filter"
+Section 9\102 Making the pagination component a shared component
+-Adding a header component to hold the header page information
 
 
 
