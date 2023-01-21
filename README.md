@@ -1,8 +1,7 @@
 # sports-ecommerce
 
-Section 9\103 Pagination and Output properties
--Adding a pager component to give the functionality
-when changing page
+Section 9\104 Adding the search functionality
+-Adding a search functionality and test it all run correctly
 
 
 
