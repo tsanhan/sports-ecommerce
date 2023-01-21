@@ -1,8 +1,8 @@
 # sports-ecommerce
 
-Section 9\99 Adding the pagination functionality part 3
--Adding new Typescript class to hold all the parameter for searching page
-and give it to the html file shop.component.html
+Section 9\101 Adding the pagination header
+-Adding the ability for the page to count how many product each page and 
+if no product it's pops up message "There are 0 results for this filter"
 
 
 
