@@ -1,8 +1,8 @@
 # sports-ecommerce
 
-Section 10\111 Making the links active
+Section 10\112 Get an individual products
 
-- Adding the route for Home and Logo to rich the same path
+- Adding method to load each product by typing view button
 
 
 
