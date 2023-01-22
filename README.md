@@ -1,13 +1,10 @@
 # sports-ecommerce
 
-Section 10\107 Introduction
+Section 10\108\109 Creating additional components to route and creating the route
 
-- SPA's need router
-- Angular router will load a component
-  when route is activated
-- <RouterOutlet>
-- Module architecture of our app
-  encourages lazyt loading
+- Create two more components product-details and home-component
+for let the app the ability of routing
+
 
 
 
