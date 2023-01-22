@@ -1,8 +1,9 @@
 # sports-ecommerce
 
-Section 10\113 Adding the product detail page
+Section 10\114 Lazy loading angular modules
 
-- Adding to html the product detail page
+- Adding lazy loading for shop page
+- End of Section 10
 
 
 
