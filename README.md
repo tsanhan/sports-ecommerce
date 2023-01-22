@@ -1,8 +1,8 @@
 # sports-ecommerce
 
-Section 10\112 Get an individual products
+Section 10\113 Adding the product detail page
 
-- Adding method to load each product by typing view button
+- Adding to html the product detail page
 
 
 
