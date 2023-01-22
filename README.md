@@ -1,8 +1,8 @@
 # sports-ecommerce
 
-Section 10\110 Setting up the nav links
+Section 10\111 Making the links active
 
-- Create the link to products view
+- Adding the route for Home and Logo to rich the same path
 
 
 
