@@ -1,9 +1,11 @@
 # sports-ecommerce
 
-Section 10\114 Lazy loading angular modules
+Section 10\115 Summary of section 10
 
-- Adding lazy loading for shop page
-- End of Section 10
+- Adding new feature module
+- Setting up routes
+- Nav links
+- Lazy loading
 
 
 
