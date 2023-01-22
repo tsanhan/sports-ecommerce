@@ -1,14 +1,14 @@
 # sports-ecommerce
 
-Section 9\106 Summary of suction 9
+Section 10\107 Introduction
 
-- File and folder structure
-- Angular service
-- Building the UI for the Shop
-- Pagination
-- Filtering, Sorting& Searching
-- Input and Output  property
-- Shared components
+- SPA's need router
+- Angular router will load a component
+  when route is activated
+- <RouterOutlet>
+- Module architecture of our app
+  encourages lazyt loading
+
 
 
 
