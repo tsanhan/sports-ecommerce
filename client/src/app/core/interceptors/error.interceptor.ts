@@ -19,7 +19,7 @@ export class ErrorInterceptor implements HttpInterceptor {
                     }
 
                     if (error.status === 401) {
-                        this.toastr.error(error.error.message, error.error.statusCode);
+                        this.toastr.error(error.statusText ==='OK'? "Unauthorised" : error.statusText, error.status);
                     }
 
                     if (error.status === 404) {
