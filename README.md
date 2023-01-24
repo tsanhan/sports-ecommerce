@@ -1,7 +1,8 @@
 # sports-ecommerce
 
-Section 11\120 Adding toastr notification
-- Adding the ability for request and response error messages
+Section 11\121 Handling validation error
+- Adding if statment for 400 error and give the option to
+ensure which error to message out
 
 
 
