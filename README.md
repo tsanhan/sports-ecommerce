@@ -1,8 +1,8 @@
 # sports-ecommerce
 
-Section 11\121 Handling validation error
-- Adding if statment for 400 error and give the option to
-ensure which error to message out
+Section 11\122 Improving the internal server error component
+- And of Section 11
+- Adding container in html to hold the errors details 
 
 
 
