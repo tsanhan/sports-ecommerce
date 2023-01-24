@@ -1,8 +1,7 @@
 # sports-ecommerce
 
-Section 11\120 toastr update system part 4
-- Update Angular CLI&Core and package.json
- also update angular.json and tsconfig.json
+Section 11\120 Adding toastr notification
+- Adding the ability for request and response error messages
 
 
 
