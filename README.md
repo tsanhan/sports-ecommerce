@@ -12,8 +12,9 @@ Module 12: Client - Pazzzzazz
 Goal:
 To improve the UI, to add dynamic
 breadcrumbs and page header,
-to display a loading indicator when the app is waiting for data
-from the API
+to display a loading indicator when the app is waiting
+for data from the API
+
 
 
 
