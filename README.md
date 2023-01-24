@@ -1,8 +1,11 @@
 # sports-ecommerce
 
-Section 11\122 Improving the internal server error component
-- And of Section 11
-- Adding container in html to hold the errors details 
+Section 11\123 Summary of section 11
+Goal:
+To handle errors we receive from the API
+centrally and handled by
+the http interceptor.
+To understand hoe to troubleshoot API errors
 
 
 
