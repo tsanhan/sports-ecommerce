@@ -1,11 +1,20 @@
 # sports-ecommerce
 
-Section 11\123 Summary of section 11
+Section 11\124 Introduction
+Module 12: Client - Pazzzzazz
+- Improve a page header
+- Adding breadcrumbs
+- Styling the product item
+- Adding loading indicators
+- Changing the bootstrap theme
+- Improving the home page
+
 Goal:
-To handle errors we receive from the API
-centrally and handled by
-the http interceptor.
-To understand hoe to troubleshoot API errors
+To improve the UI, to add dynamic
+breadcrumbs and page header,
+to display a loading indicator when the app is waiting for data
+from the API
+
 
 
 
