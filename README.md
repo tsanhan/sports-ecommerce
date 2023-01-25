@@ -1,8 +1,8 @@
 # sports-ecommerce
 
-Section 11\126\7 Using the breadcrumb service
-- Insert product name into product page
-- style the root name
+Section 11\128 Setting the section header title from the breadcrumb service
+- Insert breadcrumb observable to run each page or product to give a title
+
 
 
 
