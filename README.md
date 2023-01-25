@@ -1,7 +1,7 @@
 # sports-ecommerce
 
-Section 11\129 Styling the product items
-- Adding pointer for card to show a litlle bit opacity and button show
+Section 11\130 Changing the bootstrap theme
+- Using bootswatch tamplate to redesign the page
 
 
 
