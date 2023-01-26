@@ -1,8 +1,8 @@
 # sports-ecommerce
 
-Section 11\132 Cleaning up loading issues
-- Take off from viewChild the static:true to false
-and achieve no element during loading
+Section 11\133 Addidng the home page content
+- Adding slide images for hoe page 
+- Adjust the content of shop page and give fine tuning
 
 
 
