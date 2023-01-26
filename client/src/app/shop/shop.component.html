@@ -1,11 +1,10 @@
-<div class="containermt-5 ">
+<div class="containermt-5">
   <div class="row">
     <section class="col-3">
+      <ng-container *ngIf="types && brands">
       <h5 class="text-warning ml-3">Sort</h5>
       <select
-        class="custome-select mb-3"
-        (change)="onSortSelected($event.target.value)"
-      >
+        class="custome-select mb-3"(change)="onSortSelected($event.target.value)">
         <option *ngFor="let sort of sortOptions" [value]="sort.value">
           {{ sort.name }}
         </option>
@@ -14,8 +13,7 @@
       <h5 class="text-warning ml-3">Brands</h5>
       <ul class="list-group my-3">
         <li
-          class="list-group-item"
-          *ngFor="let brand of brands"
+          class="list-group-item" *ngFor="let brand of brands"
           [class.active]="brand.id === this.shopParams.brandId"
           [value]="brand.id"
           (click)="onBrandSelected(brand.id)"
@@ -35,6 +33,7 @@
           {{ type.name }}
         </li>
       </ul>
+    </ng-container>
     </section>
     <section class="col-9">
       <div class="d-flex justify-content-between align-items-center pb-2">
@@ -45,16 +44,21 @@
         >
         </app-paging-header>
 
-        <div class="form-inline mt-2">
-          <input (keyup.enter)="onSearch()"
+        <div class="form-inline mt-2" *ngIf="products">
+          <input
+            (keyup.enter)="onSearch()"
             class="form-control mr-2"
             #search
             style="width: 300px"
             placeholder="Search"
             type="text"
           />
-          <button (click)="onSearch()" class="btn btn-outline-primary my-2">Search</button>
-          <button (click)="onReset()" class="btn btn-outline-primary ml-2 my-2">Reset</button>
+          <button (click)="onSearch()" class="btn btn-outline-primary my-2">
+            Search
+          </button>
+          <button (click)="onReset()" class="btn btn-outline-primary ml-2 my-2">
+            Reset
+          </button>
         </div>
       </div>
       <div class="row">
