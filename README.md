@@ -1,9 +1,12 @@
 # sports-ecommerce
 
-Section 13\137 Setting up the basket class
+Section 13\138 Creating a basket repository interface
 
-- Setting up the basket class and items class to hold
- all types of parameter related to products
+- Enable 3 task for basket repository:
+1. Create basket
+2. Update basket
+3. Delete basket
+ 
 
 
 
