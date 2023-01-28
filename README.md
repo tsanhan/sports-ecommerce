@@ -1,11 +1,9 @@
 # sports-ecommerce
 
-Section 13\139 Implementing the basket repository
+Section 13\140 Adding the basket controller
 
-- Adding 3 Implementation for basket repository:
-1. Create basket
-2. Update basket
-3. Delete basket
+- Adding basket controller to use as a memory manegment for the clients basket
+
  
 
 
