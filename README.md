@@ -1,9 +1,11 @@
 # sports-ecommerce
 
-Section 13\136 Setting up Redis
+Section 13\137 Setting up the basket class
 
-- Adding another service to startup class to hold Redis
-- Give one mpre key value in appsetting.json to read Redis 
+- Setting up the basket class and items class to hold
+ all types of parameter related to products
+
+
 
 
 
