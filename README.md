@@ -1,8 +1,16 @@
 # sports-ecommerce
 
-Section 13\144 Testing the basket functionality
-Trying run command "docker-compose up --detach" without success
-Keep trying in the next level
+Section 14\146 Introduction
+Client-basket
+In this module
+- Adding the basket feature
+- The behaviorSubject
+- Using the async type
+- Subscribing&Unsubscribing
+Goal:
+To add the basket feature to the Angular app. To understand
+the usage of the behaviorSubject and the async pipe.
+
 
 
  
