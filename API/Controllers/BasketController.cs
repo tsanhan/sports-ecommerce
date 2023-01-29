@@ -3,14 +3,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Core.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using Core.Entities;
 
 namespace API.Controllers
 {
     public class BasketController : BaseApiController
     {
-        private readonly IBAsketRepository _basketRepository;
+        private readonly IBasketRepository _basketRepository;
 
-        public BasketController(IBAsketRepository basketRepository)
+        public BasketController(IBasketRepository basketRepository)
         {
             _basketRepository = basketRepository;
         }
@@ -20,7 +23,7 @@ namespace API.Controllers
         {
             var basket = await _basketRepository.GetBasketAsync(id);
 
-            return DayOfWeek(basket ?? new CustomerBasket(id));
+            return Ok(basket ?? new CustomerBasket(id));
         }
 
         [HttpPost]
@@ -28,7 +31,7 @@ namespace API.Controllers
         {
             var UpdatedBasket = await _basketRepository.UpdateBasketAsync(basket);
 
-            return DayOfWeek(UpdatedBasket);
+            return Ok(UpdatedBasket);
         }
 
         [HttpDelete]

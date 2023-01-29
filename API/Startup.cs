@@ -4,6 +4,7 @@ using API.Middleware;
 using AutoMapper;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using StackExchange.Redis;
 
 namespace API
 {
@@ -25,11 +26,14 @@ namespace API
                 x => x.UseSqlite(_config.GetConnectionString("DefaultConnection"))
             );
 
-             services.AddSingleton<ConnectionMultiplexer>(c=>{
-                var configuration = configuration.Parse(_config
-                .GetConnectionString("Redis"),true);
-                return ConnectionMultiplexer.Connect(configuration); 
-             });
+            services.AddSingleton<ConnectionMultiplexer>(c =>
+            {
+                var configuration = ConfigurationOptions.Parse(
+                    _config.GetConnectionString("Redis"),
+                    true
+                );
+                return ConnectionMultiplexer.Connect(configuration);
+            });
             services.AddApplicationServices();
             services.AddSwaggerDocumentation();
             services.AddCors(opt =>
