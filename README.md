@@ -1,13 +1,10 @@
 # sports-ecommerce
 
-Section 14\147 Creating the basket module
+Section 14\148 Creating the basket types
 
-- Adding basket-routing
-- Adding basket-component.html
-- Adding basket-component.scss
-- Adding basket-component.ts
-- Adding basket-module
-- Adding basket-service
+- Adding uuid to a new basket.ts types file which is
+uniq undentifide 
+
 
 
 
