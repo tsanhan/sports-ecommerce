@@ -1,8 +1,11 @@
 # sports-ecommerce
 
-Section 14\151 Persisting the basket on startup
-- Inject into app-component.ts the basket service value to hold on OnInit
-any product that is in the local storage
+Section 14\Update project part 1
+*Notice:
+From now on this project is upgrade to .Net 7.0
+Angular 15.0
+Bootstrap 5
+
 
 
 

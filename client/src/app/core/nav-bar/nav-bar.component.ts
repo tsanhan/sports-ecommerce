@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { BasketService } from 'src/app/basket/basket.service';
 
 @Component({
@@ -6,10 +6,8 @@ import { BasketService } from 'src/app/basket/basket.service';
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent implements OnInit {
+export class NavBarComponent  {
 
-  constructor() { }
-  ngOnInit(): void {
+  constructor (public basketService: BasketService) { }
 
-  }
 }
