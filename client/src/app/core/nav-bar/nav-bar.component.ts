@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BasketService } from 'src/app/basket/basket.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,8 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
-  }
 
+  }
 }

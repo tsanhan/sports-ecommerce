@@ -17,16 +17,14 @@ export class BasketService {
   constructor(private http: HttpClient) { }
 
   getBasket(id: string) {
-    return this.http.get(this.baseUrl + 'basket?id=' + id)
-      .pipe(
-        map((basket: IBasket) => {
-          this.basketSource.next(basket);
-        })
-      );
+    return this.http.get<Basket>(this.baseUrl + 'basket?id=' + id)
+      .subscribe({
+        next: basket => this.basketSource.next(basket)
+      });
   }
 
   setBasket(basket: IBasket) {
-    return this.http.post(this.baseUrl + 'basket', basket).subscribe((response: IBasket)=>{
+    return this.http.post(this.baseUrl + 'basket', basket).subscribe((response: IBasket) => {
       this.basketSource.next(response);
       console.log(response);
     }, error => {
