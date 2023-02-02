@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Basket, IBasket, IBasketItem } from '../shared/models/basket';
+import { Basket } from '../shared/models/basket';
 import { Product } from '../shared/models/product';
 
 @Injectable({
@@ -12,6 +12,9 @@ export class BasketService {
   baseUrl = environment.apiUrl;
   private basketSource = new BehaviorSubject<Basket | null>(null);
   basketSource$ = this.basketSource.asObservable();
+  private basketTotalSource = new BehaviorSubject<IBasketTotal>(null);
+  basketTotal$ = this.basketTotalSource.asObservable();
+  shipping = 0;
 
 
   constructor(private http: HttpClient) { }
@@ -39,8 +42,8 @@ export class BasketService {
     this.setBasket(basket);
   }
 
-  private addOrUpdateItem(items: IBasketItem[], itemToAdd: IBasketItem, quantity: number):
-    IBasketItem[] {
+  private addOrUpdateItem(items: BasketItem[], itemToAdd: BasketItem, quantity: number):
+    BasketItem[] {
     const index = items.findIndex(i => i.id === itemToAdd.id);
     if (index === -1) {
       itemToAdd.quantity = quantity;
@@ -51,12 +54,12 @@ export class BasketService {
     return items;
   }
 
-  private createBasket(): IBasket {
+  private createBasket(): Basket {
     const basket = new Basket();
     localStorage.setItem('basket_id', basket.id);
     return basket;
   }
-  private mapProductItemToBasketItem(item: IProduct, quantity: number): IBasketItem {
+  private mapProductItemToBasketItem(item: Product, quantity: number): BasketItem {
     return {
       id: item.id,
       productName: item.name,
