@@ -1,10 +1,8 @@
 # sports-ecommerce
 
-Section 14\152 Displaying the basket item count in the navbar
-*Notice:
-From now on this project is upgrade to .Net 7.0
-Angular 15.0
-Bootstrap 5
+Section 14\153 Styling the basket page
+- Add an html tags to decorate the basket page
+- Adding it also into navbar-component html to display it on page(navbar)
 
 
 
