@@ -1,8 +1,9 @@
 # sports-ecommerce
 
-Section 14\153 Styling the basket page
-- Add an html tags to decorate the basket page
-- Adding it also into navbar-component html to display it on page(navbar)
+Section 14\154 Adding the basket total price to the service
+- Add a new basketTotal interface
+- Adding inside the basketService a new method call calculateTotal
+to hold the functionality for sum the total price in the basket
 
 
 
