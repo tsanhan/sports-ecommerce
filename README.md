@@ -1,7 +1,7 @@
 # sports-ecommerce
 
-Section 14\157 Adding th basket component function
-- Add the increment\decrement function to the basket
+Section 14\158 Hooking the product detail component to the basket
+
 
 
 
