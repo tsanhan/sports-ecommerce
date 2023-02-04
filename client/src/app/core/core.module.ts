@@ -8,6 +8,7 @@ import { ServerErrorComponent } from './server-error/server-error.component';
 import { ToastrModule } from 'ngx-toastr';
 import { SectionHeaderComponent } from './section-header/section-header.component';
 import { BreadcrumbModule } from 'xng-breadcrumb';
+import { BasketComponent } from '../basket/basket.component';
 
 
 
@@ -24,6 +25,7 @@ import { BreadcrumbModule } from 'xng-breadcrumb';
   ],
   exports: [NavBarComponent,
     SectionHeaderComponent
+
   ]
 })
 export class CoreModule { }

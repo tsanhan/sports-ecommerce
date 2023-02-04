@@ -21,11 +21,11 @@
                 <th>
                   <div class="p-2 d-inline-block">
                     <img
-                      src="{{ item.pictureUrl }}"
-                      alt="{{ item.productName }}"
+                      src="{{item.pictureUrl}}"
+                      alt="{{item.productName}}"
                       class="img-fluid"
                       style="max-height: 50px"
-                    />
+                    >
                     <div class="ms-3 d-inline-block align-middle">
                       <h5 class="mb-0">
                         <a class="text-dark text-decoration-none">
@@ -43,15 +43,22 @@
                 </td>
                 <td class="align-middle">
                   <div class="d-flex align-items-center">
-                    <i class="fa fa-minus-circle text-warning me-2" style="cursor: pointer; font-size: 2em;"></i>
+                    <i class="fa fa-minus-circle text-warning me-2" style="cursor: pointer; font-size: 2em;"
+                    (click)="removeItem(item.id, 1)"
+                    ></i>
                     <strong style="font-size: 1.5em;">{{item.Quantity}}</strong>
-                    <i class="fa fa-plus-circle text-warning mx-2" style="cursor: pointer; font-size:2em;"></i>
+                    <i class="fa fa-plus-circle text-warning mx-2" style="cursor: pointer; font-size:2em;"
+                    (click)="incrementQuantity(item)"
+                    ></i>
                   </div>
                 </td>
                 <td class="align-middle"><strong>{{item.price * item.Quantity | currency}}</strong></td>
                 <td class="align-middle">
                   <a  class="text-danger">
-                    <i class="fa fa-trash" style="font-size: 2em; cursor:pointer;"></i>
+                    <i
+                    (click)="removeItem(item.id, item.quantity)"
+                    class="fa fa-trash"
+                    style="font-size: 2em; cursor:pointer;"></i>
                   </a>
                 </td>
               </tr>

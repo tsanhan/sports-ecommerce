@@ -7,11 +7,11 @@ import { BasketItem } from 'src/app/shared/models/basket';
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent  {
+export class NavBarComponent {
 
-  constructor (public basketService: BasketService) { }
+  constructor(public basketService: BasketService) { }
 
-  getCount(items: BasketItem[]){
-return items.reduce((sum, item) => sum + item.quantity, 0);
+  getCount(items: BasketItem[]) {
+    return items.reduce((sum, item) => sum + item.quantity, 0);
   }
 }
