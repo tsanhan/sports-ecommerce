@@ -1,6 +1,6 @@
 # sports-ecommerce
 
-Section 14\158 Hooking the product detail component to the basket
+Section 14\159 Adding the checkout module
 
 
 
