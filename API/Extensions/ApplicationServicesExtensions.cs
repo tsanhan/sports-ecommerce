@@ -10,42 +10,10 @@ namespace API.Extensions
 {
     public static class ApplicationServicesExtensions
     {
-        public static IServiceCollection AddApplicationServices(this IServiceCollection services,
-            IConfiguration config
-        )
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
-            services.AddAutoMapper(typeof(MappingProfiles));
-            services.AddDbContext<StoreContext>(
-                x => x.UseSqlite(config.GetConnectionString("DefaultConnection"))
-            );
-            // services.AddDbContext<appIdentifyDbContext>( x =>
-            //    x.UseSqlite(_config.GetConnectionString("IdentifyConnection"))
-            // );
-
-            services.AddSingleton<IConnectionMultiplexer>(c =>
-            {
-                var configuration = ConfigurationOptions.Parse(
-                    config.GetConnectionString("Redis"),
-                    true
-                );
-                return ConnectionMultiplexer.Connect(configuration);
-            });
-            services.AddCors(opt =>
-            {
-                opt.AddPolicy(
-                    "CorsPolicy",
-                    policy =>
-                    {
-                        policy
-                            .AllowAnyHeader()
-                            .AllowAnyMethod()
-                            .WithOrigins("https://localhost:4200");
-                    }
-                );
-            });
-
+        
             services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
             services.Configure<ApiBehaviorOptions>(options =>
             {

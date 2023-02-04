@@ -1,6 +1,6 @@
 # sports-ecommerce
 
-Section 15\164 Adding the IdentityDbContext
+Section 15\165 Adding a new migration
 
 
 
