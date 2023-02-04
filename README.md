@@ -1,8 +1,17 @@
 # sports-ecommerce
 
-Section 14\160 Summary of section 14
-To add the basket feature to the Angular app. To understand
-the usage of the behaviorSubject and the async pipe.
+Section 15\161 Introduction
+In this module
+-Setting up ASP>NET Identity
+-Context bounderies
+-Using the USerManager & SignInManager
+-Extension methods
+-JWT Token
+The goal:
+To implement ASP>NET Identity to allow client to login and register
+to our app and receive a JWT Token which can be used to authenticate
+againts certain classes/methods in the API
+
 
 
 

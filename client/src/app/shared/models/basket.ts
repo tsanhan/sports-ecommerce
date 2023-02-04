@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 
 
+
 export interface BasketItem {
   id: number
   productName: string
@@ -13,7 +14,7 @@ export interface BasketItem {
 
 export interface Basket {
   id: string
-  items: BasketItem[]
+  items: BasketItem[];
 }
 export class Basket implements Basket {
   id = uuidv4();
