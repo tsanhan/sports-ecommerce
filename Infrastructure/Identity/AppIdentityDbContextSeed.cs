@@ -22,7 +22,7 @@ namespace Infrastructure.Identity
                         City = "Florida",
                         State = "FL",
                         ZipCode = "901728"
-                    }
+                    },
                 };
                 await userManager.CreateAsync(user, "Pa$$w0rd");
             }

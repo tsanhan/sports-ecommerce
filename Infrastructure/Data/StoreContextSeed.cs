@@ -37,5 +37,10 @@ namespace Infrastructure.Data
             if (context.ChangeTracker.HasChanges())
                 await context.SaveChangesAsync();
         }
+
+        public static Task SeedAsync(StoreContext context)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
