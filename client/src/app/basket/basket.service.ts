@@ -12,9 +12,9 @@ export class BasketService {
   baseUrl = environment.apiUrl;
   private basketSource = new BehaviorSubject<Basket | null>(null);
   basketSource$ = this.basketSource.asObservable();
-  private basketTotalSource = new BehaviorSubject<BasketTotals>(null);
+  private basketTotalSource = new BehaviorSubject<BasketTotals | null>(null);
   basketTotalSource$ = this.basketTotalSource.asObservable();
-  shipping = 0;
+  // shipping = 0;
 
 
   constructor(private http: HttpClient) { }
@@ -25,7 +25,7 @@ export class BasketService {
         this.basketSource.next(basket);
         this.calculateTotals();
       }
-    });
+    })
   }
 
   setBasket(basket: Basket) {
@@ -34,7 +34,7 @@ export class BasketService {
         this.basketSource.next(basket);
         this.calculateTotals();
       }
-    });
+    })
   }
 
   getCurrentBasketValue() {
