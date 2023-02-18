@@ -1,4 +1,3 @@
-using System;
 using API.Extensions;
 using API.Middleware;
 using Infrastructure.Data;
@@ -6,11 +5,13 @@ using Microsoft.EntityFrameworkCore;
 
 // Add services to the container.
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddControllers();
 builder.Services.AddApplicationServices(builder.Configuration);
+builder.Services.AddIdentityServices(builder.Configuration);
 
 // builder.Services.AddIdentityServices(builder.Configuration);
-builder.Services.AddSwaggerDocumentation();
+// builder.Services.AddSwaggerDocumentation();
 
 var app = builder.Build();
 

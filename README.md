@@ -1,11 +1,10 @@
 # sports-ecommerce
 
-Section 14\160 Summary of section 14 part 2
-To add the basket feature to the Angular app. To understand
-the usage of the behaviorSubject and the async pipe.
-- Adding style to the basket
-- Adding functionality to some the order in the basket
-- Adding the ability to show how many order each product from product description
+Section 15\161\2\3\4\5 Section 15\165 Adding the IdentityDbContext
+Install all Microsoft.AspNetCore.Identity packages
+
+- Adding user propertys
+
 
 
 
