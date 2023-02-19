@@ -1,9 +1,10 @@
 # sports-ecommerce
 
-Section 15\161\2\3\4\5 Section 15\165 Adding the IdentityDbContext
+Section 15\167 Adding  Identity to program class
 Install all Microsoft.AspNetCore.Identity packages
 
-- Adding user propertys
+- Adding Authentication and Authorization to Identity Service Extensions
+
 
 
 
