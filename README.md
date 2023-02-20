@@ -1,9 +1,8 @@
 # sports-ecommerce
 
-Section 15\167 Adding  Identity to program class
-Install all Microsoft.AspNetCore.Identity packages
+Section 15\168 Adding  Identity to program class and startup services for identity
 
-- Adding Authentication and Authorization to Identity Service Extensions
+
 
 
 
