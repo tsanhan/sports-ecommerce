@@ -39,7 +39,7 @@ namespace API
                 );
                 return ConnectionMultiplexer.Connect(configuration);
             });
-           
+           services.AddSwaggerGen();
             services.AddSwaggerDocumentation();
             services.AddCors(opt =>
             {
