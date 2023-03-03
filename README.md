@@ -1,6 +1,6 @@
 # sports-ecommerce
 
-Section 15\175 Add additional account methods
+Section 15\177 Adding another Dto for the user
 
 
 
