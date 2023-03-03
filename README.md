@@ -1,12 +1,13 @@
 # sports-ecommerce
+Section 16 API - Validation
+Section 16\179 Introduction
 
-Section 15\178 Summary of section 15 (fixed)
-
-The goal:
-To implement ASP>NET Identity to allow client to login and register
-to our app and receive a JWT Token which can be used to authenticate
-againts certain classes/methods in the API
-
+Goal:
+To add validation attributes to data
+we recieve from the client to
+ensure our API does not accept 
+bad data and returns the 
+modelState errors to the client
 
 
 
