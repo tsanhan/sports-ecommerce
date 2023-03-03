@@ -1,6 +1,6 @@
 # sports-ecommerce
 
-Section 15\174 Troubleshooting auth issues
+Section 15\175 Add additional account methods
 
 
 
