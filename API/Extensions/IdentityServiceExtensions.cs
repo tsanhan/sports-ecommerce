@@ -18,12 +18,12 @@ namespace API.Extensions
                 opt.UseSqlite(config.GetConnectionString("IdentityConnection"));
             });
 
-            // services.AddIdentityCore<AppUser>(opt =>
-            //     {
-            //         //add identity options here
-            //     })
-            //     .AddEntityFrameworkStores<AppIdentityDbContext>()
-            //     .AddSignInManager<SignInManager<AppUser>>();
+            services.AddIdentityCore<AppUser>(opt =>
+                {
+                    //add identity options here
+                })
+                .AddEntityFrameworkStores<AppIdentityDbContext>()
+                .AddSignInManager<SignInManager<AppUser>>();
 
             var builder = services.AddIdentityCore<AppUser>();
             builder = new IdentityBuilder(builder.UserType, builder.Services);
