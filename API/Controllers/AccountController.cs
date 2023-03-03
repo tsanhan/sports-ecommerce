@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using API.Dtos;
 using API.Errors;
 using Core.Entities.Identity;
@@ -59,9 +55,10 @@ namespace API.Controllers
                 Email = registerDto.Email,
                 UserName = registerDto.Email
             };
+
             var result = await _userManager.CreateAsync(user, registerDto.Password);
-            if (!result.Succeeded)
-                return BadRequest(new ApiResponse(400));
+            if (!result.Succeeded) return BadRequest(new ApiResponse(400));
+            
             return new UserDto
             {
                 Displayname = user.DisplayName,

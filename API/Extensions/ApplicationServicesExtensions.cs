@@ -11,44 +11,29 @@ namespace API.Extensions
 {
     public static class ApplicationServicesExtensions
     {
-        public static IServiceCollection AddApplicationServices(this IServiceCollection services,
+        public static IServiceCollection AddApplicationServices(
+            this IServiceCollection services,
             IConfiguration config
         )
         {
-            services.AddAutoMapper(typeof(MappingProfiles));
-            services.AddDbContext<StoreContext>(
-                x => x.UseSqlite(config.GetConnectionString("DefaultConnection"))
-            );
-            // services.AddDbContext<appIdentifyDbContext>( x =>
-            //    x.UseSqlite(_config.GetConnectionString("IdentifyConnection"))
-            // );
+            services.AddEndpointsApiExplorer();
+            services.AddSwaggerGen();
+            services.AddDbContext<StoreContext>(opt =>
+            {
+                opt.UseSqlite(config.GetConnectionString("DefaultConnection"));
+            });
 
             services.AddSingleton<IConnectionMultiplexer>(c =>
             {
-                var configuration = ConfigurationOptions.Parse(
-                    config.GetConnectionString("Redis"),
-                    true
-                );
-                return ConnectionMultiplexer.Connect(configuration);
-            });
-            services.AddCors(opt =>
-            {
-                opt.AddPolicy(
-                    "CorsPolicy",
-                    policy =>
-                    {
-                        policy
-                            .AllowAnyHeader()
-                            .AllowAnyMethod()
-                            .WithOrigins("https://localhost:4200");
-                    }
-                );
+                var options = ConfigurationOptions.Parse(config.GetConnectionString("Redis"));
+                return ConnectionMultiplexer.Connect(options);
             });
 
-            services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IBasketRepository, BasketRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.InvalidModelStateResponseFactory = actionContext =>
@@ -63,6 +48,21 @@ namespace API.Extensions
                     return new BadRequestObjectResult(errorResponse);
                 };
             });
+
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy(
+                    "CorsPolicy",
+                    policy =>
+                    {
+                        policy
+                            .AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .WithOrigins("https://localhost:4200");
+                    }
+                );
+            });
+
             return services;
         }
     }
