@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class TestErrorComponent implements OnInit {
 
-  baseUrl = environment.apiUrl;
+  baseUrl = environment?.apiUrl;
   validationErrors: any;
 
   constructor(private http: HttpClient) { }
